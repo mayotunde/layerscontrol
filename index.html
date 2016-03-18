@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8" />
-<title>cities</title>
+<title>Leaflet layer control</title>
 <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
 <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
 </head>
@@ -29,6 +29,6 @@ var map = L.map('map', {center:[10, 3.28], zoom: 4, layers: [base, points]});
 var basemap = {"basemap": base, "Toner": Toner};
 var overlay = {"points": points};
 
-L.control.layers(basemap, overlay).addTo(map);
+L.control.layers(basemap, overlay, {collapsed: true}).addTo(map);
        
 </script></body></html>
